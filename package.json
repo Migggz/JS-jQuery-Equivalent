@@ -1,0 +1,33 @@
+{
+  "name": "toolkit",
+  "version": "1.0.0",
+  "description": "Workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maged Mohamed",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.12",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.6.2",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-import-css": "^0.1.2",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-strip-comments": "^2.4.3",
+    "gulp-uglify": "^1.5.3",
+    "imagemin-svgo": "^5.1.0",
+    "postcss-font-magician": "^1.4.0",
+    "postcss-import": "^8.1.2",
+    "postcss-pxtorem": "^3.3.1",
+    "rucksack-css": "^0.8.6",
+    "uglify": "^0.1.5"
+  }
+}

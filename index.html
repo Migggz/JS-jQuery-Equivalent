@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Reference</title>
+    <link rel="stylesheet" href="css/main.css" >
+  </head>
+  <body>
+    <header class="header" id="header">
+      <h1>JavaScript</h1>
+      <h2>Reference</h2>
+    </header>
+    <section class="about" id="about">
+      <div class="container">
+        <h1 class="section-title">About Javascript</h1>
+        <p class="section-p">
+          Created by Netscape in 1995 as an extension of HTML for Netscape Navigator 2.0, JavaScript had as its main function the manipulation of HTML documents and form validation. Before winning this name so famous nowadays, JavaScript was called Mocha. When it first shipped in beta releases, it was officially called LiveScript and finally, when it was released by Sun Microsystems, was baptized with the name by which it is known today. Because of the similar names, people confuse JavaScript with Java. Although both have the lexical structure of programming, they are not the same language. Different from C, C# and Java, JavaScript is an interpreted language. It means that it needs an "interpreter". In case of JavaScript, the interpreter is the browser. The JavaScript standard is ECMAScript. As of 2012, all modern browsers fully support ECMAScript 5.1. Older browsers support at least ECMAScript 3. As of June 2015 the spec for ES6/ES2015 has been approved. See the ECMAScript 2015 Language Specification at Ecma International.
+        </p>
+        <p class="section-p">
+          <span>The DOM </span>: The Document Object Model (DOM) is an API for HTML and XML documents. It provides a structural representation of the document, enabling you to modify its content and visual presentation by using a scripting language such as JavaScript. See more at Mozilla Developer Network - DOM.
+        </p>
+      </div>
+    </section>
+    <section class="string">
+      <div class="container">
+        <h1 class="section-title">Some Basics</h1>
+        <p class="section-p semi-table">
+          <span><i class="fa fa-star fa-2x" aria-hidden="true"></i> Data Types : </span><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>Primitive Values</b> : <br>
+            <em>
+              <ic class="fa fa-arrow-right" aria-hidden="true"></ic>String<hint><em class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></em>  Ex:"Javascript"</hint><br>
+              <ic class="fa fa-arrow-right" aria-hidden="true"></ic>Number<hint><em class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></em>  Ex: 25</hint><br>
+              <ic class="fa fa-arrow-right" aria-hidden="true"></ic>Boolean<hint><em class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></em>  Ex: True || False</hint><br>
+              <ic class="fa fa-arrow-right" aria-hidden="true"></ic>Null<hint><em class="fa fa-exclamation fa-lg" aria-hidden="true"></em>   Variable has no Value</hint><br>
+              <ic class="fa fa-arrow-right" aria-hidden="true"></ic>Undefined<hint><em class="fa fa-exclamation fa-lg" aria-hidden="true"></em>   Default Datatype for Any Variable</hint><br>
+          </em>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>References Types</b> : <br>
+          <em>
+            <ic class="fa fa-arrow-right" aria-hidden="true"></ic>Object<hint><em class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></em>  Ex: {firstName: "Maged", lastName: "Mohamed", age: 21}</hint><br>
+            <ic class="fa fa-arrow-right" aria-hidden="true"></ic>Array<hint><em class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></em>  Ex: ["Maged", "Mohamed", 21]</hint><br>
+            <ic class="fa fa-arrow-right" aria-hidden="true"></ic>Function<hint><em class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></em>  Ex: function nameOfFunction (param1, param2) { //Code }</hint><br>
+            <ic class="fa fa-arrow-right" aria-hidden="true"></ic>Date<hint> <em class="fa fa-exclamation fa-lg" aria-hidden="true"></em> Describe The Date</hint><br>
+            <ic class="fa fa-arrow-right" aria-hidden="true"></ic>RegExp<hint> <em class="fa fa-exclamation fa-lg" aria-hidden="true"></em> A regular expression is an object that describes a pattern of characters.  <em class="fa fa-long-arrow-right fa-lg"></em>  Ex: /pattern/modifiers;</hint><br>
+          </em>
+        </p>
+        <p class="section-p semi-table">
+          <span><i class="fa fa-star fa-2x" aria-hidden="true"></i> Arithmetic Operators </span><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( + )</b> : <em>Addition</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( - )</b> : <em>Subtract</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( * )</b> : <em>Multiplication</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( / )</b> : <em>Division</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( % )</b> : <em>Modulus</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( ++ )</b> : <em>Increment</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( -- )</b> : <em>Decrement</em><br>
+        </p>
+        <p class="section-p semi-table">
+          <span><i class="fa fa-star fa-2x" aria-hidden="true"></i> Assignment Operators </span><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( = )</b> : <em>Equals</em><hint><em class="fa fa-exclamation fa-lg" aria-hidden="true"></em> Declare a Variable anywhere even in if Statement</hint><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( += )</b> : <em>Add Value Over its value</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( -= )</b> : <em>Subtract Value Over its value</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( *= )</b> : <em>Multiply Value Over its value</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( /= )</b> : <em>Dive Value Over its value</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( %= )</b> : <em>Modules Value Over its value</em><br>
+        </p>
+        <p class="section-p semi-table">
+          <span><i class="fa fa-star fa-2x" aria-hidden="true"></i> Comparison and Logical Operators</span><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( == )</b> : <em>Equal To</em> <hint><em class="fa fa-exclamation fa-lg" aria-hidden="true"></em> Compare a value of variable to other</hint><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( === )</b> : <em>Equal Value and Equal Type</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( != )</b> : <em>NOT Equal</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( !== )</b> : <em>NOT Equal Value and NOT Equal Type</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( > )</b> : <em>Greater Than</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( < )</b> : <em>Less Than</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( >= )</b> : <em>Greater Than OR Equal</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( =< )</b> : <em>Less Than OR Equal</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( ? )</b> : <em>Ternary Operator</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( &amp;&amp; )</b> : <em>And Operator</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b>( || )</b> : <em>Or Operator</em><br>
+        </p>
+      </div>
+    </section>
+    <section class="table">
+      <div class="container">
+        <h1 class="section-title">Strings</h1>
+        <table>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>.length</td>
+            <td>Returns the length of a string</td>
+            <td><var>var</var> x = <string>"Maged"</string>;x.<func>length</func> //return 5</td>
+          </tr>
+          <tr>
+            <td>.toString()</td>
+            <td>Returns the value of a String object, Convert Number to String</td>
+            <td><var>var</var> x = [<string>"Hello World!"</string>, 21];console.<func>log</func>(x.<func>toString</func>()); // "Maged, 21"</td>
+          </tr>
+          <tr>
+            <td>.indexOf(value, Start Position)</td>
+            <td>Returns the position of the FIRST found occurrence of a specified value in a string</td>
+            <td><var>var </var>x = <string>"Hello World!"</string>; console.<func>log</func>(x.<func>indexOf("o", 5)</func>); // output 7</td>
+          </tr>
+          <tr>
+            <td>.lastIndexOf(value, Start Position)</td>
+            <td>Returns the position of the LAST found occurrence of a specified value in a string</td>
+            <td><var>var </var>x = <string>"Hello World!"</string>; console.<func>log</func>(x.<func>lastIndexOf("o", 5)</func>); // output 4</td>
+          </tr>
+          <tr>
+            <td>.search(/String/ig) </td>
+            <td>Searches a string for a specified value, or regular expression[<hint>Case Sensitive</hint>], and returns the position of the match</td>
+            <td><var>var </var>x = <string>"Mr. Blue has a blue mouse"</string>; console.<func>log</func>(x.<func>search("blue")</func>); // output 15</td>
+          </tr>
+          <tr>
+            <td>.split(Separator, Limit)</td>
+            <td>Splits a string into an array of substrings</td>
+            <td><var>var </var>x = <string>"How Are You Today ?"</string>; console.<func>log</func>(x.<func>split</func>("o", 2)); // output: H,w are y,</td>
+          </tr>
+          <tr>
+            <td>.slice(Start, End)</td>
+            <td>Extracts a part of a string and returns a new string</td>
+            <td><var>var </var>x = <string>"Hello World!"</string>; console.<func>log</func>(x.<func>slic</func>(2,6)); // output: llo W</td>
+          </tr>
+          <tr>
+            <td>.substr(Start, Length)</td>
+            <td>Extracts the characters from a string, beginning at a specified start position, and through the specified number of character</td>
+            <td><var>var </var>x = <string>"Hello World!"</string>; console.<func>log</func>(x.<func>substr</func>(0,4)); // output: Hell</td>
+          </tr>
+          <tr>
+            <td>.substring(Start, End)</td>
+            <td>Extracts the characters from a string, between two specified indices<hint>it's like slice(), but in slice method the first parameter can't be Greater Than The Second one</hint></td>
+            <td><var>var </var>x = <string>"Hello World!"</string>; console.<func>log</func>(x.<func>substring</func>(6, 2));// == substring(2, 6) // output: llo W</td>
+          </tr>
+          <tr>
+            <td>.charAt(index)</td>
+            <td>Returns the character at the specified index (position)</td>
+            <td><var>var </var>x = <string>"Hello World!"</string>; console.<func>log</func>(x.<func>.charAt(x.length-1)</func>); // output: !</td>
+          </tr>
+          <tr>
+            <td>.charCodeAt(index)</td>
+            <td>Returns the Unicode of the character at the specified index</td>
+            <td><var>var </var>x = <string>"Hello World!"</string>; console.<func>log</func>(x.<func>.charCodeAt(0)</func>); // output: 72</td>
+          </tr>
+          <tr>
+            <td>.replace(value, new value)</td>
+            <td>Searches a string for a specified value, or a regular expression[<hint>Case Sensitive</hint>], and returns a new string where the specified values are replaced</td>
+            <td><var>var </var>x = <string>"Hello World!"</string>; console.<func>log</func>(x.<func>.replace("Hello", "Maged")</func>); // output: Hello Maged!</td>
+          </tr>
+          <tr>
+            <td>String.fromCharCode(Num1, Num2, . . Num)</td>
+            <td>Converts Unicode values to characters</td>
+            <td><var>var </var>x = String.<func>fromCharCode</func>(72, 69, 76, 76, 79); console.<func>log</func>(x); // output: HELLO</td>
+          </tr>
+          <tr>
+            <td>.concat(String1, string2)</td>
+            <td>Joins two or more strings, and returns a new joined strings</td>
+            <td><var>var </var>x = <string>"Hello"</string>, y = <string>"World !"</string>; console.<func>log</func>(x.<func>concat</func>(y)); // output: Hello World!</td>
+          </tr>
+          <tr>
+            <td>.toLowerCase()</td>
+            <td>Converts a string to lowercase letters</td>
+            <td><var>var </var>x = <string>"Hello World !"</string>; console.<func>log</func>(x.<func>toLowerCase</func>()); // output: hello world!</td>
+          </tr>
+          <tr>
+            <td>.toUpperCase()</td>
+            <td>Converts a string to upper letters</td>
+            <td><var>var </var>x = <string>"Hello World !"</string>; console.<func>log</func>(x.<func>toLowerCase</func>()); // output: HELLO WORLD!</td>
+          </tr>
+          <tr>
+            <td>.trim()</td>
+            <td>Removes whitespace from both ends of a string</td>
+            <td><var>var </var>x = <string>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hello World!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "</string>; console.<func>log</func>(x.<func>trim</func>()); // output: Hello World!</td>
+          </tr>
+          <tr>
+            <td>.link("http://....")</td>
+            <td>Displays a string as a hyperlink</td>
+            <td><var>var </var>x = <string>"Fb.Com"</string>; console.<func>log</func>(x.<func>link("http://facebook.com/Maged.AbdelWahab")</func>); // output: <a href="http://facebook.com/Maged.AbdelWahab" target="_blank">Fb.Com</a></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="table">
+      <div class="container">
+        <h1 class="section-title">Numbers</h1><hint>64-Bit Floating Point Numbers</hint>
+        <table>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>.toExponential(x)</td>
+            <td>Converts a number into an exponential notation</td>
+            <td><var>var</var> x = 5.56789; console.<func>log</func>(x.<func>toExponential(3)</func>); //output 5.568e+0</td>
+          </tr>
+          <tr>
+            <td>.toFixed(x)</td>
+            <td>Formats a number with x numbers of digits after the decimal point</td>
+            <td><var>var</var> x = 5.56789; console.<func>log</func>(x.<func>toFixed(2)</func>); //output 5.57</td>
+          </tr>
+          <tr>
+            <td>.parseInt(x)</td>
+            <td>function parses a string and returns an integer</td>
+            <td><var>var</var> x = <string>"100px"</string>; console.<func>log</func>(x.<func>parseInt()</func>); //output 100</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="table">
+      <div class="container">
+        <h1 class="section-title">Boolean</h1>
+        <table>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>Boolean(Statement)</td>
+            <td>To Figure out whether the statement is True or False</td>
+            <td><var>var</var> x = <func>Boolean</func>(5 > 10); console.<func>log</func>(x); //output False</td>
+          </tr>
+          <tr>
+            <td>Boolean.valueOf()</td>
+            <td>Returns the primitive value of a boolean</td>
+            <td><var>var</var> x = true; console.<func>log</func>(x.<func>valueOf()</func>); //output true</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="table">
+      <div class="container">
+        <h1 class="section-title">Arrays</h1>
+        <table>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>.isArray()</td>
+            <td>Checks whether an object is an array</td>
+            <td><var>var</var> x = ["Mitsubishi", "Chevrolet", "Nissan"]; console.<func>log</func>(x.<func>isArray()</func>); //output true</td>
+          </tr>
+          <tr>
+            <td>.toString()</td>
+            <td>Converts an array to a string, and returns the result</td>
+            <td><var>var</var> x = ["Mitsubishi", "Chevrolet", "Nissan"]; console.<func>log</func>(x.<func>toString()</func>); //output Mitsubishi,Chevrolet,Nissan</td>
+          </tr>
+          <tr>
+            <td>.push()</td>
+            <td>Adds new elements to the END of an array, and returns the new length <br><hint>Another Way to push Element:  x[x.length] = "Nissan";</hint></td>
+            <td><var>var</var> x = ["Mitsubishi", "Chevrolet"]; x.<func>push("Nissan")</func>; console.<func>log</func>(x); //output ["Mitsubishi", "Chevrolet", "Nissan"]</td>
+          </tr>
+          <tr>
+            <td>.unshift()</td>
+            <td>Adds new elements to the BEGINNING of an array, and returns the new length</td>
+            <td><var>var</var> x = ["Mitsubishi", "Chevrolet"]; x.<func>unshift("Nissan")</func>; console.<func>log</func>(x); //output ["Nissan", "Mitsubishi", "Chevrolet"]</td>
+          </tr>
+          <tr>
+            <td>.splice(index, How Many, pushItem1, pushItem2 . .)</td>
+            <td>Adds/Removes elements from an array <hint>How Many : Required. The number of items to be removed. If set to 0, no items will be removed</hint></td>
+            <td><var>var</var> x = ["Mitsubishi", "Chevrolet", "Nissan"]; x.<func>splice(1, 1, "Ferrari","Mercedes")</func>; console.<func>log</func>(x); //output ["Mitsubishi", "Ferrari", "Mercedes", "Nissan"]</td>
+          </tr>
+          <tr>
+            <td>.pop()</td>
+            <td>Removes the LAST element of an array, and returns that element</td>
+            <td><var>var</var> x = ["Mitsubishi", "Chevrolet", "Nissan"]; x.<func>pop()</func>; console.<func>log</func>(x); //output ["Mitsubishi", "Chevrolet"]</td>
+          </tr>
+          <tr>
+            <td>.shift()</td>
+            <td>Removes the FIRST element of an array, and returns that element</td>
+            <td><var>var</var> x = ["Mitsubishi", "Chevrolet", "Nissan"]; x.<func>pop()</func>; console.<func>log</func>(x); //output ["Chevrolet", "Nissan"]</td>
+          </tr>
+          <tr>
+            <td>.sort()</td>
+            <td>Sorts the elements of an array, The sort order can be either alphabetic or numeric, and either ascending (up) or descending (down). <hint><a href="http://www.w3schools.com/jsref/jsref_sort.asp" style="font-weight: bold; color: inherit" target="_blank">Read More</a></hint></td>
+            <td><var>var</var> x = ["Mitsubishi", "Chevrolet", "Nissan"]; x.<func>sort()</func>; console.<func>log</func>(x); //output ["Chevrolet", "Mitsubishi","Nissan"]</td>
+          </tr>
+          <tr>
+            <td>.reverse()</td>
+            <td>Reverses the order of the elements in an array</td>
+            <td><var>var</var> x = ["Mitsubishi", "Chevrolet", "Nissan"]; x.<func>sort()</func>; console.<func>log</func>(x); //output ["Nissan", "Mitsubishi","Chevrolet"]</td>
+          </tr>
+          <tr>
+            <td>.slice(Start, End)</td>
+            <td>Selects a part of an array, and returns the NEW ARRAY</td>
+            <td><var>var</var> x = ["Mitsubishi", "Chevrolet", "Nissan"]; console.<func>log</func>(x.<func>slice(1, 2)</func>); //output ["Mitsubishi"]</td>
+          </tr>
+          <tr>
+            <td>.concat()</td>
+            <td>Joins two or more arrays, and returns a copy of the joined arrays</td>
+            <td><var>var</var> x = ["Mitsubishi", "Chevrolet", "Nissan"], y = ["Ferrari", "Mercedes"]; console.<func>log</func>(x.<func>concat(y)</func>); //output ["Mitsubishi", "Chevrolet", "Nissan","Ferrari", "Mercedes"]</td>
+          </tr>
+          <tr>
+            <td>.indexOf(Item, Start Index)</td>
+            <td>Search the array for an element and returns its position</td>
+            <td><var>var</var> x = ["Mitsubishi", "Chevrolet", "Nissan", "Chevrolet"]; console.<func>log</func>(x.<func>indexOf("Chevrolet", 2)</func>); //output 3</td>
+          </tr>
+          <tr>
+            <td>.lastIndexOf(Item, Start Index)</td>
+            <td>Search the array for an element, starting at the end, and returns its position</td>
+            <td><var>var</var> x = ["Mitsubishi", "Chevrolet", "Nissan", "Chevrolet"]; console.<func>log</func>(x.<func>lastIndexOf("Chevrolet", 2)</func>); //output 1</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="table">
+      <div class="container">
+        <h1 class="section-title">Date</h1>
+        <p style="margin-top: -50px" class="section-p semi-table">
+          <i></i><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b> Full Format</b> : <em>October 25, 1982 09:20:50</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b> Long Format</b> : <em>Oct 25 1982</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b> Short Format</b> : <em>10/25/1982 09:20:50</em><br>
+          <i class="fa fa-arrow-circle-right fa-lg fa-lg" aria-hidden="true"></i> <b> ISO Format</b> : <em>YYYY-MM-DD hh:mm:ss+TZD</em><br>
+        </p>
+        <table>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>.getDate()</td>
+            <td>Returns the day of the month (from 1-31)</td>
+            <td><var>var</var> x = new <func>Date()</func>; console.<func>log</func>(x.<func>getDate()</func>; //output <em id="getDate"></em></td>
+          </tr>
+          <tr>
+            <td>.getFullYear()</td>
+            <td>Returns the Year</td>
+            <td><var>var</var> x = new <func>Date()</func>; console.<func>log</func>(x.<func>getDay()</func>; //output <em id="getFullYear"></em></td>
+          </tr>
+          <tr>
+            <td>.getMonth()</td>
+            <td>Returns the month (from 0-11) <hint>Junuary is 0, February is 1, and so on</hint></td>
+            <td><var>var</var> x = new <func>Date()</func>; console.<func>log</func>(x.<func>getMonth()</func>; //output <em id="getMonth"></em></td>
+          </tr>
+          <tr>
+            <td>.getDay()</td>
+            <td>Returns the day of the week (from 0-6) <hint>Sunday is 0, Monday is 1, and so on.</hint></td>
+            <td><var>var</var> x = new <func>Date()</func>; console.<func>log</func>(x.<func>getDay()</func>; //output <em id="getDay"></em></td>
+          </tr>
+          <tr>
+            <td>.getHours()</td>
+            <td>Returns the hour (from 0-23)</td>
+            <td><var>var</var> x = new <func>Date()</func>; console.<func>log</func>(x.<func>getHours()</func>; //output <em id="getHours"></em></td>
+          </tr>
+          <tr>
+            <td>.getMinutes()</td>
+            <td>Returns the minutes (from 0-59)</td>
+            <td><var>var</var> x = new <func>Date()</func>; console.<func>log</func>(x.<func>getMinutes()</func>; //output <em id="getMinutes"></em></td>
+          </tr>
+          <tr>
+            <td>.getSeconds()</td>
+            <td>Returns the Seconds (from 0-59)</td>
+            <td><var>var</var> x = new <func>Date()</func>; console.<func>log</func>(x.<func>getSeconds()</func>; //output <em id="getSeconds"></em></td>
+          </tr>
+          <tr>
+            <td>.getMilliseconds()</td>
+            <td>Returns the Milliseconds (from 0-999)</td>
+            <td><var>var</var> x = new <func>Date()</func>; console.<func>log</func>(x.<func>getMilliseconds()</func>; //output <em id="getMilliseconds"></em></td>
+          </tr>
+          <tr>
+            <td>.getTime()</td>
+            <td>Returns the number of milliseconds since midnight Jan 1 1970<hint>epoch</hint>, and a specified date</td>
+            <td><var>var</var> x = new <func>Date()</func>; console.<func>log</func>(x.<func>getTime()</func>; //output <em id="getTime"></em></td>
+          </tr>
+          <tr>
+            <td>.getTimezoneOffset()</td>
+            <td>Returns the time difference between UTC time and local time, in minutes</td>
+            <td><var>var</var> x = new <func>Date()</func>; console.<func>log</func>(x.<func>getTimezoneOffset()</func>; //output <em id="getTimezoneOffset"></em></td>
+          </tr>
+          <table>
+            <tr>
+              <td style="text-align: center; color: #CCC; background-color: #456481">
+                The <u>SET</u> Methods , Just replace get with set [setTime()] , It's the same meaning<br>
+                And All That Methods By Adding UTC after get/set [getUTCDay() / setUTCDay()] you will get/set the result in Universal Time Coordinates
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>.now()</td>
+              <td>Returns the number of milliseconds since midnight Jan 1, 1970<hint>The Difference Between now() and getTime() , That is getTime() Will tell the time at the point of the variable was set. However, now() Will get the time current now --> The best is now()</hint></td>
+              <td><var>var</var> x = new <func>Date.now()</func>; console.<func>log</func>(x) ; //output <em id="now"></em></td>
+            </tr>
+            <tr>
+              <td>.parse("")</td>
+              <td>Parses a date string and returns the number of milliseconds since January 1, 1970 till Specific Date</td>
+              <td><var>var</var> x = new <func>Date.parse("Aug 5, 2016")</func>; console.<func>log</func>(x) ; //output <em id="parse"></em></td>
+            </tr>
+            <tr>
+              <td>.toISOString()</td>
+              <td>Returns the date as a string, using the ISO standard</td>
+              <td><var>var</var> x = new <func>Date()</func>; console.<func>log</func>(x.<func>toISOString()</func>; //output <em id="toISOString"></em></td>
+            </tr>
+            <tr>
+              <td>.toDateString()</td>
+              <td>Converts the date portion of a Date object into a readable string</td>
+              <td><var>var</var> x = new <func>Date()</func>; console.<func>log</func>(x.<func>toDateString()</func>; //output <em id="toDateString"></em></td>
+            </tr>
+            <tr>
+              <td>.toTimeString()</td>
+              <td>Converts the time portion of a Date object to a string</td>
+              <td><var>var</var> x = new <func>Date()</func>; console.<func>log</func>(x.<func>toTimeString()</func>; //output <em id="toTimeString"></em></td>
+            </tr>
+          </table>
+        </table>
+      </div>
+    </section>
+    <section class="table">
+      <div class="container">
+        <h1 class="section-title">Math Object</h1>
+        <table>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>Math.ceil(x)</td>
+            <td>Returns x, rounded UPWARDS to the nearest integer</td>
+            <td><var>var</var> x = 1.4; console.<func>log</func>(<func>Math.ceil(x)</func>); //output 2</td>
+          </tr>
+          <tr>
+            <td>Math.floor(x)</td>
+            <td>Returns x, rounded DOWNWARDS to the nearest integer</td>
+            <td><var>var</var> x = 1.7; console.<func>log</func>(<func>Math.floor(x)</func>); //output 1</td>
+          </tr>
+          <tr>
+            <td>Math.round(x)</td>
+            <td>Rounds x to the nearest integer</td>
+            <td><var>var</var> x = 1.4; console.<func>log</func>(<func>Math.round(x)</func>); //output 1</td>
+          </tr>
+          <tr>
+            <td>Math.min(x, y, z, ...)</td>
+            <td>Returns the number with the lowest value</td>
+            <td><var>var</var> x = 4, y = 6; console.<func>log</func>(<func>Math.min(x, y)</func>); //output 4</td>
+          </tr>
+          <tr>
+            <td>Math.max(x, y, z, ...)</td>
+            <td>Returns the number with the highest value</td>
+            <td><var>var</var> x = 4, y = 6; console.<func>log</func>(<func>Math.min(x, y)</func>); //output 6</td>
+          </tr>
+          <tr>
+            <td>Math.random()</td>
+            <td>Returns a random number between 0 and 1</td>
+            <td><var>var</var> x = Math.floor(Math.random() * 100 + 1); console.<func>log</func>(x); //output <em id="random"></em></td>
+          </tr>
+          <table>
+            <tr>
+              <td style="text-align: center; color: #CCC; background-color: #456481">
+                Other Known Methods : sin(), cos(), tan(), log(), pow(), sqrt()
+              </td>
+            </tr>
+          </table>
+        </table>
+      </div>
+    </section>
+    <section class="table">
+      <div class="container">
+        <h1 class="section-title">Global Ref.</h1>
+        <table>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>eval(string)</td>
+            <td>Evaluates a string and executes it as if it was script code</td>
+            <td><var>var</var> x = <func>eval</func>("5 * 5"); console.<func>log</func>(x); //output 25</td>
+          </tr>
+          <tr>
+            <td>isNaN()</td>
+            <td>Determines whether a value is an illegal number</td>
+            <td><var>var</var> x = isNaN(0 / 0); console.<func>log</func>(x); //output false</td>
+          </tr>
+          <tr>
+            <td>Number()</td>
+            <td>	Converts an object's value to a number</td>
+            <td><var>var</var> x = true; console.<func>log</func>(<func>Number</func>(x)); //output 1</td>
+          </tr>
+          <tr>
+            <td>String()</td>
+            <td>Converts an object's value to a number</td>
+            <td><var>var</var> x = Boolean(0); console.<func>log</func>(<func>Sting</func>(x)); //output true</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="table">
+      <div class="container">
+        <h1 class="section-title" title="Full Reference"><i class="fa fa-external-link fa-lg" aria-hidden="true"> </i> <a href="http://www.w3schools.com/jsref/jsref_obj_regexp.asp" style="text-decoration: none; color: inherit;" target="_blank">Regular Expression</a></h1>
+        <p class="section-p" style="padding-left: 50px; color: #CCC; margin-top: 0">
+          A regular expression is an object that describes a pattern of characters.<br>
+          Regular expressions are used to perform pattern-matching and "search-and-replace" functions on text.
+        </p>
+      </div>
+    </section>
+    <section class="dom">
+      <div class="container">
+        <h1 class="section-title">Document Object Model</h1>
+        <table>
+          <caption>DOM Document</caption>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>jQuery Equivalent</th>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #717174; font-weight: bold">Finding HTML Elements</td></tr></table>
+        <table>
+          <tr>
+            <td>document.getElementById(id)</td>
+            <td>Find an element by element id</td>
+            <td>$('#ID')</td>
+          </tr>
+          <tr>
+            <td>document.getElementsByTagName(name)</td>
+            <td>Find elements by tag name</td>
+            <td>$('name')</td>
+          </tr>
+          <tr>
+            <td>document.getElementsByClassName(name)</td>
+            <td>Find elements by class name</td>
+            <td>$('.class')</td>
+          </tr>
+          <tr>
+            <td>document.querySelectorAll()</td>
+            <td>Returns a static NodeList<hint>Array</hint> containing all elements that matches a specified CSS selector(s) in the document</td>
+            <td>$('selector')</td>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #717174; font-weight: bold">Adding and Deleting Elements</td></tr></table>
+        <table>
+          <tr>
+            <td>document.createElement()</td>
+            <td>Creates an Element node</td>
+            <td>$(document.createElement('div')) <hint>This is The Best Way !</hint></td>
+          </tr>
+          <tr>
+            <td>document.createTextNode()</td>
+            <td>Creates a Text node</td>
+            <td>$('selector').append(document.createTextNode())</td>
+          </tr>
+          <tr>
+            <td>document.createAttribute("attribute")</td>
+            <td>Creates an attribute node</td>
+            <td>$("selector").attr("attrivute","value");</td>
+          </tr>
+          <tr>
+            <td>element.removeChild()<hint>Unknown Parent : child.parentNode.removeChild(child)</hint></td>
+            <td>Removes a child node from an element</td>
+            <td>$(element).empty()</td>
+          </tr>
+          <tr>
+            <td>element.appendChild()</td>
+            <td>Adds a new CHILD node, to an element, as the last child node</td>
+            <td>$(element).append()</td>
+          </tr>
+          <tr>
+            <td>element.insertBefore(newnode, existingnode)</td>
+            <td>Inserts a new child node before a specified, existing, child node</td>
+            <td>$(contentToBeInserted).insertBefore(target)</td>
+          </tr>
+          <tr>
+            <td>element.replaceChild(newnode,oldnode)</td>
+            <td>Replaces a child node in an element</td>
+            <td>.replaceWith(newContent)</td>
+          </tr>
+          <tr>
+            <td>document.write()</td>
+            <td>Writes HTML expressions or JavaScript code to a document <hint>mostly used for testing</hint></td>
+            <td>$(document.body).append('hello');</td>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #717174; font-weight: bold">HTML Objects</td></tr></table>
+        <table>
+          <tr>
+            <td>document.URL</td>
+            <td>Returns the full URL of the HTML document</td>
+            <td>$(location).attr("href");</td>
+          </tr>
+          <tr>
+            <td>document.lastModified</td>
+            <td>Returns the date and time the document was updated</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>document.head</td>
+            <td>Returns the &lt;head&gt; element</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>document.title</td>
+            <td>	Returns the &lt;title&gt; element</td>
+            <td></td>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #7C84BE; font-weight: bold"><a href="http://www.w3schools.com/jsref/dom_obj_document.asp" style="color: #A55" target="_blank"> -= Full HTML Objects =-</a></td></tr></table>
+        <table>
+          <caption>HTML Elements</caption>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>jQuery Equivalent</th>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #717174; font-weight: bold">Traversing HTML Nodes &amp; Elements</td></tr></table>
+        <table>
+          <tr>
+            <td>element.parentNode()</td>
+            <td>Returns the parent node of an element</td>
+            <td>$('element').parent()</td>
+          </tr>
+          <tr>
+            <td>element.childNodes[nodenumber]</td>
+            <td>Returns a collection of an element's child nodes (including text and comment nodes)</td>
+            <td>.contents()[]</td>
+          </tr>
+          <tr>
+            <td>element.firstChild</td>
+            <td>Returns the first child node of an element</td>
+            <td>.contents()[0]</td>
+          </tr>
+          <tr>
+            <td>element.lastChild</td>
+            <td>Returns the last child node of an element</td>
+            <td>.contents()[contents.length - 1]</td>
+          </tr>
+          <tr>
+            <td>element.nextSibling</td>
+            <td>Returns the next NODE at the same node tree level</td>
+            <td>Rarely to found method that Traverse DOM NODES !!</td>
+          </tr>
+          <tr>
+            <td>element.previousSibling</td>
+            <td>Returns the previous NODE at the same node tree level</td>
+            <td>Rarely to found method that Traverse DOM NODES !!</td>
+          </tr>
+          <tr>
+            <td>element.firstElementChild</td>
+            <td>Returns the first child Element of an element</td>
+            <td>element.first()</td>
+          </tr>
+          <tr>
+            <td>element.lastElementChild</td>
+            <td>Returns the last child Element of an element</td>
+            <td>element.last()</td>
+          </tr>
+          <tr>
+            <td>element.nextElementSibling</td>
+            <td>Returns the next Element at the same node tree level</td>
+            <td>.next()</td>
+          </tr>
+          <tr>
+            <td>element.previousElementSibling</td>
+            <td>Returns the previous Element at the same node tree level</td>
+            <td>.prev()</td>
+          </tr>
+          <tr>
+            <td>element.hasChildNodes()</td>
+            <td>Returns true if an element has any child nodes, otherwise false</td>
+            <td>if ( $(element).children().length > 0 ) {// do something}</td>
+          </tr>
+          <tr>
+            <td>element.cloneNode(deep)</td>
+            <td>Clone an Element. || deep value: true|false.  Optional. Specifies whether all descendants of the node should be cloned.</td>
+            <td>.clone()</td>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #717174; font-weight: bold">Elements Properties</td></tr></table>
+        <table>
+          <tr>
+            <td>element.innerHTML</td>
+            <td>Sets or returns the content of an element</td>
+            <td>.html(html string)</td>
+          </tr>
+          <tr>
+            <td>element.textContent</td>
+            <td>Sets or returns the textual content of a node and its descendants</td>
+            <td>.text(html string)</td>
+          </tr>
+          <tr>
+            <td>element.getAttribute()</td>
+            <td>Returns the specified attribute value of an element node</td>
+            <td>.attr(attribute)</td>
+          </tr>
+          <tr>
+            <td>element.setAttribute(attributename,attributevalue)</td>
+            <td>Sets or changes the specified attribute, to the specified value</td>
+            <td>.attr(attributeName, attributeValue)</td>
+          </tr>
+          <tr>
+            <td>element.hasAttribute()</td>
+            <td>Returns true if an element has the specified attribute, otherwise false <hint>Return True/False</hint> </td>
+            <td>Has No <a href="http://stackoverflow.com/questions/1318076/jquery-hasattr-checking-to-see-if-there-is-an-attribute-on-an-element">Equivalent</a></td>
+          </tr>
+          <tr>
+            <td>element.removeAttribute()</td>
+            <td>Removes a specified attribute from an element</td>
+            <td>.removeAttr( attributeName )</td>
+          </tr>
+          <tr>
+            <td>element.classList</td>
+            <td>Returns the class name(s) of an element</td>
+            <td>Has No <a href="http://stackoverflow.com/questions/1227286/get-class-list-for-element-with-jquery">Equivalent</a></td>
+          </tr>
+          <tr>
+            <td>element.classList.item(index)</td>
+            <td>Returns the class name with a specified index number from an element. Index starts at 0. <hint>Returns null if the index is out of range</hint></td>
+            <td>Has No <a href="http://stackoverflow.com/questions/1227286/get-class-list-for-element-with-jquery">Equivalent</a></td>
+          </tr>
+          <tr>
+            <td>element.classList.contains(class)</td>
+            <td>Returns a Boolean value, indicating whether an element has the specified class name.</td>
+            <td>.hasClass( className )</td>
+          </tr>
+          <tr>
+            <td>element.classList.add(class1, class2, ...)</td>
+            <td>Adds one or more class names to an element. <hint>If the specified class already exist, the class will not be added</hint></td>
+            <td>.addClass( className/function )</td>
+          </tr>
+          <tr>
+            <td>element.classList.remove(class1, class2, ...)</td>
+            <td>Removes one or more class names from an element. <hint>Removing a class that does not exist, does NOT throw an error</hint></td>
+            <td>.removeClass( [className ] )</td>
+          </tr>
+          <tr>
+            <td>element.classList.toggle(class, true|false)</td>
+            <td>Toggles between a class name for an element. <hint>The optional second parameter is a Boolean value that forces the class to be added or removed, regardless of whether or not it already existed. False->Remove | True->Add</hint></td>
+            <td>.toggleClass( className )</td>
+          </tr>
+          <tr>
+            <td>element.focus()</td>
+            <td>Gives focus to an element</td>
+            <td>Has No Equivalent</td>
+          </tr>
+          <tr>
+            <td>element.blur()</td>
+            <td>Removes focus from an element</td>
+            <td>Has No Equivalent</td>
+          </tr>
+          <tr>
+            <td>element.click()</td>
+            <td>Simulates a mouse-click on an element</td>
+            <td>Has No Equivalent</td>
+          </tr>
+          <tr>
+            <td>element.contains(node)</td>
+            <td>Returns true if a node is a descendant of a node, otherwise false</td>
+            <td>.contains( container, contained )</td>
+          </tr>
+          <tr>
+            <td>element.clientHeight</td>
+            <td>returns in pixels : VISIBLE content &amp; padding | but not the border, scrollbar or margin.</td>
+            <td>clientHeight can be calculated as CSS height + CSS padding - height of horizontal scrollbar (if present)</td>
+          </tr>
+          <tr>
+            <td>element.clientWidth</td>
+            <td>returns in pixels : VISIBLE content &amp; padding | but not the border, scrollbar or margin.</td>
+            <td>clientWidth can be calculated as CSS width + CSS padding - height of vertical scrollbar (if present)</td>
+          </tr>
+          <tr>
+            <td>element.clientTop</td>
+            <td>returns the width of the top border of an element, in pixels. does not include the element's top padding or top margin</td>
+            <td>Has No Equivalent</td>
+          </tr>
+          <tr>
+            <td>element.clientLeft</td>
+            <td>returns the width of the left border of an element, in pixels. does not include the element's top padding or top margin</td>
+            <td>Has No Equivalent</td>
+          </tr>
+          <tr>
+            <td>element.scrollHeight</td>
+            <td>returns in pixels : ENTIRE  content &amp; padding (visible or not) | but not the border, scrollbar or margin.</td>
+            <td>Has No Equivalent</td>
+          </tr>
+          <tr>
+            <td>element.scrollWidth</td>
+            <td>returns in pixels : ENTIRE  content &amp; padding (visible or not) | but not the border, scrollbar or margin.</td>
+            <td>Has No Equivalent</td>
+          </tr>
+          <tr>
+            <td>element.scrollTop</td>
+            <td>sets or returns the number of pixels an element's content is scrolled vertically.</td>
+            <td>.scrollTop()</td>
+          </tr>
+          <tr>
+            <td>element.scrollLeft</td>
+            <td>sets or returns the number of pixels an element's content is scrolled horizontally.</td>
+            <td>.scrollLeft()</td>
+          </tr>
+          <tr>
+            <td>element.offsetHeight</td>
+            <td>returns in pixels :  VISIBLE content &amp; padding + border + scrollbar | but not the margin.</td>
+            <td>.outerHeight(margin[true|false])</td>
+          </tr>
+          <tr>
+            <td>element.offsetWidth</td>
+            <td>returns in pixels :  VISIBLE content &amp; padding + border + scrollbar | but not the margin.</td>
+            <td>.outerWidth(margin[true|false])</td>
+          </tr>
+          <tr>
+            <td>element.offsetTop</td>
+            <td>returns the top position (in pixels) relative to the top of the offsetParent element.</td>
+            <td>.position().top <hint>.offset().top : returns the top position relative to the DOCUMENT</hint></td>
+          </tr>
+          <tr>
+            <td>element.offsetLeft</td>
+            <td>returns the left position (in pixels) relative to the left of the offsetParent element.</td>
+            <td>.position().left <hint>.offset().left : returns the left position relative to the DOCUMENT</hint></td>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #717174; font-weight: bold">Changing Elements Style</td><td>element.style.property=new style <hint onclick="window.open('http://www.w3schools.com/jsref/dom_obj_style.asp')" style="cursor: pointer">Full Reference</hint></td></tr></table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #717174; font-weight: bold">HTML DOM Events</td></tr></table>
+        <table>
+          <tr>
+            <td>onload</td>
+            <td>The event occurs when an object has loaded</td>
+            <td>.load(myfunc)</td>
+          </tr>
+          <tr>
+            <td>onscroll</td>
+            <td>The event occurs when an element's scrollbar is being scrolled</td>
+            <td>.scroll(myfunc)</td>
+          </tr>
+          <tr>
+            <td>onresize</td>
+            <td>The event occurs when an element's scrollbar is being resized</td>
+            <td>.resize(myfunc)</td>
+          </tr>
+          <tr>
+            <td>onfocus</td>
+            <td>The event occurs when an element gets focus</td>
+            <td>.focus(myfunc)</td>
+          </tr>
+          <tr>
+            <td>onsubmit</td>
+            <td>The event occurs when a form is submitted</td>
+            <td>.submit(myfunc)</td>
+          </tr>
+          <tr>
+            <td>onclick</td>
+            <td>The event occurs when the user clicks on an element</td>
+            <td>.click(myfunc)</td>
+          </tr>
+          <tr>
+            <td>ondblclick</td>
+            <td>The event occurs when the user double-clicks on an element</td>
+            <td>.dblclick(myfunc)</td>
+          </tr>
+          <tr>
+            <td>onmouseenter</td>
+            <td>The event occurs when the pointer is moved onto an element</td>
+            <td>.mouseenter(myfunc)</td>
+          </tr>
+          <tr>
+            <td>onkeydown</td>
+            <td>The event occurs when the user is pressing a key</td>
+            <td>.keydown(myfunc)</td>
+          </tr>
+          <tr>
+            <td>onkeypress</td>
+            <td>The event occurs when the user presses a key</td>
+            <td>.keypress(myfunc)</td>
+          </tr>
+          <tr>
+            <td>onkeyup</td>
+            <td>The event occurs when the user releases a key</td>
+            <td>.keyup(myfunc)</td>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #7C84BE; font-weight: bold"><a href="http://www.w3schools.com/jsref/dom_obj_event.asp" style="color: #A55" target="_blank"> -= Full Events =-</a></td></tr></table>
+        <table>
+          <tr>
+            <td>element.addEventListener(event, function, useCapture)</td>
+            <td>Attaches an event handler to the specified element ||<hint>useCapture->true : the event is first captured by the outermost element and propagated to the inner elements.</hint>||<hint>useCapture-> false : the event is first captured and handled by the innermost element and then propagated to outer elements.(Bubbling)</hint></td>
+            <td>.on(event, selector, handler)</td>
+          </tr>
+          <tr>
+            <td>element.removeEventListener(event, function, useCapture)</td>
+            <td>Removes an event handler that has been attached with the addEventListener() method</td>
+            <td>.off(event, selector, handler)</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="bom">
+      <div class="container">
+        <h1 class="section-title">Browser Object Model</h1>
+        <table>
+          <caption>Window Object</caption>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>jQuery Equivalent</th>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #477e76; font-weight: bold">Window Object Properties</td></tr></table>
+        <table>
+          <tr>
+            <td>innerWidth</td>
+            <td>Returns the inner width of a window's content area without toolbars/scrollbars.</td>
+            <td>$(window).width()</td>
+          </tr>
+          <tr>
+            <td>innerHeight</td>
+            <td>Returns the inner height of a window's content area without toolbars/scrollbars.</td>
+            <td>$(window).height()</td>
+          </tr>
+          <tr>
+            <td>outerWidth</td>
+            <td>Returns the outer width of a window, including toolbars/scrollbars</td>
+            <td>jQuery Has Not outerWidth Property that include toolbars/scrollbars !!!</td>
+          </tr>
+          <tr>
+            <td>outerHeight</td>
+            <td>Returns the outer Height of a window, including toolbars/scrollbars</td>
+            <td>jQuery Has Not outerHeight Property Equivalent that include toolbars/scrollbars !!!</td>
+          </tr>
+          <tr>
+            <td>pageXOffset</td>
+            <td>Returns the pixels the current document has been scrolled (horizontally) from the upper left corner of the window</td>
+            <td>.scrollLeft()</td>
+          </tr>
+          <tr>
+            <td>pageYOffset</td>
+            <td>Returns the pixels the current document has been scrolled (vertically) from the upper left corner of the window</td>
+            <td>.scrollTop()</td>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #477e76; font-weight: bold">Window Object Methods</td></tr></table>
+        <table>
+          <tr>
+            <td>alert("..\n..")</td>
+            <td>Displays an alert box with a message and an OK button</td>
+            <td>alert("..\n..")</td>
+          </tr>
+          <tr>
+            <td>confirm("..\n..")</td>
+            <td>Displays a dialog box with a message and an OK and a Cancel button</td>
+            <td>confirm("..\n..")</td>
+          </tr>
+          <tr>
+            <td>prompt(text,defaultText)</td>
+            <td>Displays a dialog box that prompts the visitor for input</td>
+            <td>prompt(text,defaultText)</td>
+          </tr>
+          <tr>
+            <td>scrollBy(Xnum, Ynum)</td>
+            <td>Scrolls the document by the specified number of pixels</td>
+            <td>a <em onclick="window.open('http://stackoverflow.com/questions/12908589/animating-windows-scrollby-in-javascript')" style="cursor: pointer; text-decoration: underline;">Tricky way</em></td>
+          </tr>
+          <tr>
+            <td>scrollTo(Xnum, Ynum)</td>
+            <td>Scrolls the document to the specified coordinates</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>stop()</td>
+            <td>Stops the window from loading</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>close()</td>
+            <td>Closes the current window</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>focus()</td>
+            <td>Sets focus to the current window</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>open()</td>
+            <td>Opens a new browser window</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>setInterval()</td>
+            <td>Calls a function or evaluates an expression at specified intervals (in milliseconds)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>clearInterval()</td>
+            <td>Clears a timer set with setInterval()</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>setTimeout()</td>
+            <td>Calls a function or evaluates an expression after a specified number of milliseconds</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>clearTimeout()</td>
+            <td>Clears a timer set with setTimeout()</td>
+            <td></td>
+          </tr>
+        </table>
+        <table>
+          <caption>Window.Screen Object</caption>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>jQuery Equivalent</th>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #477e76; font-weight: bold">Screen Object Properties</td></tr></table>
+        <table>
+          <tr>
+            <td>screen.width</td>
+            <td>Returns the total width of the screen</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>screen.height</td>
+            <td>Returns the total height of the screen</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>screen.availWidth</td>
+            <td>Returns the width of the screen (excluding the Windows Taskbar)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>screen.availHeight</td>
+            <td>Returns the height of the screen (excluding the Windows Taskbar)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>screen.colorDepth</td>
+            <td>Returns the bit depth of the color palette for displaying images</td>
+            <td></td>
+          </tr>
+        </table>
+        <table>
+          <caption>Window.Location Object</caption>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #477e76; font-weight: bold">Location Object Properties</td></tr></table>
+        <table>
+          <tr>
+            <td>location.protocol</td>
+            <td>Sets or returns the protocol of a URL</td>
+            <td><em style="text-decoration: underline">http:</em>//www.Maged-M.Com/fullJsRef/BOM.php#Location</td>
+          </tr>
+          <tr>
+            <td>location.host</td>
+            <td>Sets or returns the hostname and port number of a URL</td>
+            <td>http://<em style="text-decoration: underline">www.Maged-M.Com</em>/fullJsRef/BOM.php#Location</td>
+          </tr>
+          <tr>
+            <td>location.pathname</td>
+            <td>Sets or returns the path name of a URL</td>
+            <td>http://www.Maged-M.Com<em style="text-decoration: underline">/fullJsRef/BOM.php#Location</em></td>
+          </tr>
+          <tr>
+            <td>location.hash</td>
+            <td>Sets or returns the anchor part (#) of a URL</td>
+            <td>http://www.Maged-M.Com/fullJsRef/BOM.php#<em style="text-decoration: underline">Location</em></td>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #477e76; font-weight: bold">Location Object Methods</td></tr></table>
+        <table>
+          <tr>
+            <td>location.assign(URL)</td>
+            <td>Loads a new document</td>
+            <td><em  onclick="location.assign('http://www.google.com')" style="cursor: pointer"> Click Me </em></td>
+          </tr>
+          <tr>
+            <td>location.replace(URL)</td>
+            <td>Replaces the current document with a new one <hint>can't go back in history like assign() method</hint></td>
+            <td><em  onclick="location.replace('http://www.google.com')" style="cursor: pointer"> Click Me </em></td>
+          </tr>
+          <tr>
+            <td>location.reload(<em>forceGET</em>) <hint>default: false</hint></td>
+            <td>Reloads the current document <hint>if you want hard reload from the server not from a cache -> location.reload(true)</hint></td>
+            <td><em  onclick="location.reload()" style="cursor: pointer"> Click Me </em></td>
+          </tr>
+        </table>
+        <table>
+          <caption>Window.History Object</caption>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #477e76; font-weight: bold">History Object Properties</td></tr></table>
+        <table>
+          <tr>
+            <td>history.length</td>
+            <td>Returns the number of URLs in the history list</td>
+            <td onclick="this.innerHTML = history.length"> Click to Show History Length</td>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #477e76; font-weight: bold">History Object Methods</td></tr></table>
+        <table>
+          <tr>
+            <td>history.back()</td>
+            <td>Loads the previous URL in the history list</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>history.forward()</td>
+            <td>Loads the next URL in the history list</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>history.go( <em>number +/- | URL</em> )</td>
+            <td>Loads a specific URL from the history list</td>
+            <td></td>
+          </tr>
+        </table>
+        <table>
+          <caption>Window.Navigator Object</caption>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #477e76; font-weight: bold">Navigator Object Properties</td></tr></table>
+        <table>
+          <tr>
+            <td>navigator.appCodeName</td>
+            <td>Returns the code name of the browser</td>
+            <td id="appCodeName"></td>
+          </tr>
+          <tr>
+            <td>navigator.appName</td>
+            <td>Returns the name of the browser</td>
+            <td id="appName"></td>
+          </tr>
+          <tr>
+            <td>navigator.appVersion</td>
+            <td>Returns the version information of the browser</td>
+            <td id="appVersion"></td>
+          </tr>
+          <tr>
+            <td>navigator.cookieEnabled</td>
+            <td>Determines whether cookies are enabled in the browser</td>
+            <td id="cookieEnabled"></td>
+          </tr>
+          <tr>
+            <td>navigator.geolocation</td>
+            <td>Returns a Geolocation object that can be used to locate the user's position</td>
+            <td id="geolocation"></td>
+          </tr>
+          <tr>
+            <td>navigator.language</td>
+            <td>Returns the language of the browser</td>
+            <td id="language"></td>
+          </tr>
+          <tr>
+            <td>navigator.onLine</td>
+            <td>Determines whether the browser is online</td>
+            <td id="onLine"></td>
+          </tr>
+          <tr>
+            <td>navigator.platform</td>
+            <td>Returns for which platform the browser is compiled</td>
+            <td id="platform"></td>
+          </tr>
+          <tr>
+            <td>navigator.product</td>
+            <td>Returns the engine name of the browser</td>
+            <td id="product"></td>
+          </tr>
+          <tr>
+            <td>navigator.userAgent</td>
+            <td>Returns the user-agent header sent by the browser to the server</td>
+            <td id="userAgent"></td>
+          </tr>
+        </table>
+        <table><tr><td style="text-align: center; color: #CCC; background-color: #477e76; font-weight: bold">Navigator Object Methods</td></tr></table>
+        <table>
+          <tr>
+            <td>history.back()</td>
+            <td>Loads the previous URL in the history list</td>
+          </tr>
+          <tr>
+            <td>history.forward()</td>
+            <td>Loads the next URL in the history list</td>
+          </tr>
+          <tr>
+            <td>history.go( <em>number +/- | URL</em> )</td>
+            <td>Loads a specific URL from the history list</td>
+          </tr>
+        </table>
+        <table>
+          <caption>Cookies <br> <hint>Cookies are data, stored in small text files, on your computer.</hint> <br> <hint>When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.</hint></caption>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>document.cookie = "Cookie;expires=Exp.Date;Path"</td>
+            <td>Set or Get Cookie of the document</td>
+            <td>document.cookie = "username=maged;expires=09 April 2033 UTC;path=/"</td>
+          </tr>
+          <tr>
+            <td>document.cookie = "..;expires= 1970;.."</td>
+            <td>To Delete a Cookie set the expires parameter to a passed date</td>
+            <td>document.cookie = "username=maged;expires=09 April 1996 UTC;path=/"</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
+<!-- http://youmightnotneedjquery.com/ -->
+<!-- Reference Section -->
+<!--  -->
